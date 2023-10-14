@@ -91,8 +91,6 @@
   transform: translate(-50%, -50%);
 }
 
-/* ... (기존의 스타일) ... */
-
 /* contact가 확장될 때의 효과 */
 .container[data-hovered="contact"] .contact {
   width: 65%;
@@ -128,7 +126,7 @@
 /* history가 확장될 때 다른 박스들의 크기 */
 .container[data-hovered="history"] .contact {
   width: 50%;
-  height: 35%;
+  height: 45%;
 }
 
 .container[data-hovered="history"] .project {
@@ -147,28 +145,28 @@
 
 /* project가 확장될 때의 효과 */
 .container[data-hovered="project"] .project {
-  width: 50%;
-  height: 70%;
+  width: 60%;
+  height: 75%;
 }
 
 /* project가 확장될 때 다른 박스들의 크기 */
 .container[data-hovered="project"] .contact {
-  width: 50%;
-  height: 35%;
+  width: 80%;
+  height: 25%;
 }
 
 .container[data-hovered="project"] .history {
-  width: 40%;
-  height: 60%;
+  width: 20%;
+  height: 45%;
 }
 
 .container[data-hovered="project"] .strength {
-  width: 60%;
-  height: 30%;
+  width: 40%;
+  height: 55%;
 }
 
 .container[data-hovered="project"] .user-info {
-  transform: translate(-50%, -30%);
+  transform: translate(50%, -125%);
 }
 
 /* strength가 확장될 때의 효과 */
@@ -179,20 +177,47 @@
 
 /* strength가 확장될 때 다른 박스들의 크기 */
 .container[data-hovered="strength"] .contact {
-  width: 30%;
-  height: 50%;
+  width: 50%;
+  height: 30%;
 }
 
 .container[data-hovered="strength"] .history {
-  width: 30%;
+  width: 50%;
   height: 50%;
 }
 
 .container[data-hovered="strength"] .project {
-  width: 40%;
-  height: 60%;
+  width: 30%;
+  height: 70%;
 }
 
 .container[data-hovered="strength"] .user-info {
-  transform: translate(-40%, -50%);
+  transform: translate(-100%, -100%);
+}
+
+/* userInfo가 확장될 때의 효과 */
+.container[data-hovered="user-info"] .user-info {
+  width: 40%;
+  height: 40%;
+}
+
+/* userInfo가 확장될 때 다른 박스들의 크기 */
+.container[data-hovered="user-info"] .contact {
+  width: 30%;
+  height: 70%;
+}
+
+.container[data-hovered="user-info"] .history {
+  width: 70%;
+  height: 30%;
+}
+
+.container[data-hovered="user-info"] .project {
+  width: 70%;
+  height: 30%;
+}
+
+.container[data-hovered="user-info"] .strength {
+  width: 30%;
+  height: 70%;
 }
