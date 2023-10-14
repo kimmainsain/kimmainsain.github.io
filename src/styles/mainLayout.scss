@@ -7,14 +7,14 @@
   height: 100vh;
   position: relative;
   margin: 0;
-  padding: 0;
+  padding: 48px 0;
 }
 
 .header,
 .footer {
   z-index: 90;
   width: 100%;
-  height: 50px;
+  height: 48px;
   background-color: #fff;
   border: 3px solid #141414;
   justify-content: flex-start;
@@ -35,6 +35,12 @@
   bottom: 0;
 }
 
+.main-wrapper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
 .inner-box {
   position: absolute;
   background-color: white;
@@ -43,7 +49,8 @@
   justify-content: center;
   align-items: center;
   transition:
-    color 0.5s,
+    width 0.5s,
+    height 0.5s,
     transform 0.5s;
 }
 
@@ -52,11 +59,6 @@
   height: 40%;
   top: 0;
   left: 0;
-
-  &:hover {
-    color: #f56565;
-    transform: scale(1.25);
-  }
 }
 
 .history {
@@ -64,11 +66,6 @@
   height: 60%;
   top: 0;
   right: 0;
-
-  &:hover {
-    color: #4299e1;
-    transform: scale(1.25);
-  }
 }
 
 .project {
@@ -76,11 +73,6 @@
   height: 60%;
   bottom: 0;
   left: 0;
-
-  &:hover {
-    color: #a0aec0;
-    transform: scale(1.25);
-  }
 }
 
 .strength {
@@ -88,11 +80,6 @@
   height: 40%;
   bottom: 0;
   right: 0;
-
-  &:hover {
-    color: #3b82f6;
-    transform: scale(1.25);
-  }
 }
 
 .user-info {
@@ -102,9 +89,107 @@
   left: 50%;
   background-color: #9f7aea;
   transform: translate(-50%, -50%);
+}
+/* contact가 확장될 때의 효과 */
+.contact.expanded {
+  width: 65%;
+  height: 50%;
+}
 
-  &:hover {
-    color: #f59e0b;
-    transform: translate(-50%, -50%) scale(1.25);
-  }
+/* contact가 확장될 때 다른 박스들의 크기 */
+.contact.expanded ~ .history {
+  width: 35%;
+  height: 70%;
+}
+
+.contact.expanded ~ .project {
+  width: 45%;
+  height: 50%;
+}
+
+.contact.expanded ~ .strength {
+  width: 55%;
+  height: 30%;
+}
+
+.contact.expanded ~ .user-info {
+  transform: translate(-25%, 0%);
+}
+
+/* history가 확장될 때의 효과 */
+.history.expanded {
+  width: 50%;
+  height: 70%;
+}
+
+/* history가 확장될 때 다른 박스들의 크기 */
+.history.expanded ~ .contact {
+  width: 50%;
+  height: 30%;
+}
+
+.history.expanded ~ .project {
+  width: 40%;
+  height: 60%;
+}
+
+.history.expanded ~ .strength {
+  width: 60%;
+  height: 30%;
+}
+
+.history.expanded ~ .user-info {
+  transform: translate(-50%, -70%); /* 위로 이동 */
+}
+
+/* project가 확장될 때의 효과 */
+.project.expanded {
+  width: 50%;
+  height: 70%;
+}
+
+/* project가 확장될 때 다른 박스들의 크기 */
+.project.expanded ~ .contact {
+  width: 50%;
+  height: 30%;
+}
+
+.project.expanded ~ .history {
+  width: 40%;
+  height: 60%;
+}
+
+.project.expanded ~ .strength {
+  width: 60%;
+  height: 30%;
+}
+
+.project.expanded ~ .user-info {
+  transform: translate(-50%, -30%); /* 아래로 이동 */
+}
+
+/* strength가 확장될 때의 효과 */
+.strength.expanded {
+  width: 70%;
+  height: 50%;
+}
+
+/* strength가 확장될 때 다른 박스들의 크기 */
+.strength.expanded ~ .contact {
+  width: 30%;
+  height: 50%;
+}
+
+.strength.expanded ~ .history {
+  width: 30%;
+  height: 50%;
+}
+
+.strength.expanded ~ .project {
+  width: 40%;
+  height: 60%;
+}
+
+.strength.expanded ~ .user-info {
+  transform: translate(-40%, -50%); /* 오른쪽으로 이동 */
 }
