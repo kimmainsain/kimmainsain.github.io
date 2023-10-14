@@ -5,7 +5,7 @@ const App = () => {
   const [hoveredBox, setHoveredBox] = useState(null as string | null);
 
   return (
-    <div className="container">
+    <div className="container" data-hovered={hoveredBox}>
       <div className="header marquee">위</div>
       <div className="footer marquee bottom">아래</div>
       <div className="main-wrapper">
