@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./styles/mainLayout.scss";
+import homelogo from "./assets/images/homelogo.png";
 
 const App = () => {
   const [hoveredBox, setHoveredBox] = useState(null as string | null);
@@ -19,7 +20,7 @@ const App = () => {
           onMouseLeave={() => setHoveredBox(null)}
           onClick={() => navigate("/contact")}
         >
-          Contact
+          CONTACT
         </div>
         <div
           className={`history inner-box ${
@@ -29,7 +30,7 @@ const App = () => {
           onMouseLeave={() => setHoveredBox(null)}
           onClick={() => navigate("/history")}
         >
-          History
+          HISTORY
         </div>
         <div
           className={`project inner-box ${
@@ -39,7 +40,7 @@ const App = () => {
           onMouseLeave={() => setHoveredBox(null)}
           onClick={() => navigate("/project")}
         >
-          Project
+          PROJECT
         </div>
         <div
           className={`strength inner-box ${
@@ -49,7 +50,7 @@ const App = () => {
           onMouseLeave={() => setHoveredBox(null)}
           onClick={() => navigate("/strength")}
         >
-          Strength
+          STRENGTH
         </div>
         <div
           className={`user-info inner-box ${
@@ -59,7 +60,7 @@ const App = () => {
           onMouseLeave={() => setHoveredBox(null)}
           onClick={() => navigate("/userInfo")}
         >
-          UserInfo
+          <img src={homelogo} alt="logo" className="logo" />
         </div>
       </div>
     </div>
