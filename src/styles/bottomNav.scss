@@ -38,8 +38,10 @@
       justify-content: center;
 
       img.logo {
+        width: auto;
         max-width: 100%;
-        max-height: auto;
+        height: auto;
+        max-height: 100%;
       }
     }
   }
