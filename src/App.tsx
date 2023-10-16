@@ -17,7 +17,7 @@ const App = () => {
           }`}
           onMouseEnter={() => setHoveredBox("contact")}
           onMouseLeave={() => setHoveredBox(null)}
-          onClick={() => navigate("/Contact")}
+          onClick={() => navigate("/contact")}
         >
           Contact
         </div>
@@ -27,7 +27,7 @@ const App = () => {
           }`}
           onMouseEnter={() => setHoveredBox("history")}
           onMouseLeave={() => setHoveredBox(null)}
-          onClick={() => navigate("/History")}
+          onClick={() => navigate("/history")}
         >
           History
         </div>
@@ -37,7 +37,7 @@ const App = () => {
           }`}
           onMouseEnter={() => setHoveredBox("project")}
           onMouseLeave={() => setHoveredBox(null)}
-          onClick={() => navigate("/Project")}
+          onClick={() => navigate("/project")}
         >
           Project
         </div>
@@ -47,7 +47,7 @@ const App = () => {
           }`}
           onMouseEnter={() => setHoveredBox("strength")}
           onMouseLeave={() => setHoveredBox(null)}
-          onClick={() => navigate("/Strength")}
+          onClick={() => navigate("/strength")}
         >
           Strength
         </div>
@@ -57,7 +57,7 @@ const App = () => {
           }`}
           onMouseEnter={() => setHoveredBox("user-info")}
           onMouseLeave={() => setHoveredBox(null)}
-          onClick={() => navigate("/UserInfo")}
+          onClick={() => navigate("/userInfo")}
         >
           UserInfo
         </div>

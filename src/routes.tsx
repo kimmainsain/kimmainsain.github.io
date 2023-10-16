@@ -11,23 +11,23 @@ const routes = [
     element: <App />,
   },
   {
-    path: "/UserInfo",
+    path: "/userInfo",
     element: <UserInfo />,
   },
   {
-    path: "/Contact",
+    path: "/contact",
     element: <Contact />,
   },
   {
-    path: "/History",
+    path: "/history",
     element: <History />,
   },
   {
-    path: "/Project",
+    path: "/project",
     element: <Project />,
   },
   {
-    path: "/Strength",
+    path: "/strength",
     element: <Strength />,
   },
 ];

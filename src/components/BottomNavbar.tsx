@@ -1,29 +1,36 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import "../styles/bottomNav.scss";
+import logo from "../assets/images/mainlogo.png";
 
 const BottomNavbar = () => {
+  const navigate = useNavigate();
+
+  const handleNavigation = (path: string) => {
+    navigate(path);
+  };
+
   return (
-    <nav role="navigation" className="nav-menu w-nav-menu">
-      <a href="/Contact" className="nav-link w-nav-link">
+    <nav role="navigation" className="nav-menu">
+      <div onClick={() => handleNavigation("/contact")} className="nav-link">
         CONTACT
-      </a>
-      <a href="/Project" className="nav-link w-nav-link w--current">
+      </div>
+      <div onClick={() => handleNavigation("/project")} className="nav-link">
         PROJECT
-      </a>
-      <a href="/" className="nav-link is--brand w-nav-brand" aria-label="home">
-        <img
-          // src={logoBlack}
-          alt="'Milli' written in a graffiti-style script"
-          className="black"
-        />
-        {/* <img src={logoWhite} alt="" className="white" /> */}
-      </a>
-      <a href="/Strength" className="nav-link w-nav-link">
+      </div>
+      <div
+        onClick={() => handleNavigation("/")}
+        className="nav-home is--brand"
+        aria-label="home"
+      >
+        <img src={logo} alt="logo" className="logo" />
+      </div>
+      <div onClick={() => handleNavigation("/strength")} className="nav-link">
         STRENGTH
-      </a>
-      <a href="/History" className="nav-link w-nav-link">
+      </div>
+      <div onClick={() => handleNavigation("/history")} className="nav-link">
         HISTORY
-      </a>
+      </div>
     </nav>
   );
 };

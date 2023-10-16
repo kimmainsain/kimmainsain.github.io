@@ -1,55 +1,46 @@
 .nav-menu {
   width: 100%;
-  border: 2px solid #000;
-  justify-content: space-around;
   display: flex;
+  justify-content: space-between;
 
-  .w-nav-menu {
-    float: right;
-    position: relative;
+  .nav-link,
+  .nav-home {
+    height: 50px;
+    text-align: center;
+    border: 2px solid #000;
+    border-radius: 5px;
+    text-transform: uppercase;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    color: #222;
+    text-decoration: none;
+    cursor: pointer;
+    transition:
+      background-color 0.3s ease,
+      color 0.3s ease; // Smooth transition effect
+
+    &:hover {
+      background-color: #333; // Dark shade on hover, but not entirely black
+      color: #fff; // Text color remains white for contrast
+    }
   }
 
   .nav-link {
     width: 23.5%;
-    height: 50px;
-    text-align: center;
-    text-transform: uppercase;
-    background-color: #fff;
-    justify-content: center;
-    align-items: center;
-    font-family: forma-djr-text, sans-serif;
-    font-size: 18px;
-    font-weight: 400;
-    display: flex;
-
-    &.w-nav-link {
-      vertical-align: top;
-      color: #222;
-      text-align: left;
-      margin-left: auto;
-      margin-right: auto;
-      padding: 20px;
-      text-decoration: none;
-      display: inline-block;
-      position: relative;
-    }
-
-    &.is--brand {
-      img {
-        &.black {
-          // styles for the black logo
-        }
-        &.white {
-          // styles for the white logo
-        }
-      }
-    }
   }
 
-  a {
-    color: #141414;
-    font-family: input-mono, sans-serif;
-    font-size: 14px;
-    text-decoration: underline;
+  .nav-home {
+    &.is--brand {
+      flex-grow: 1; // This will make the logo take up the remaining space
+      justify-content: center;
+
+      img.logo {
+        max-width: 100%; // Ensure the logo doesn't exceed the container width
+        max-height: 100%; // Ensure the logo doesn't exceed the container height
+      }
+    }
   }
 }
