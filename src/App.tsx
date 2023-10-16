@@ -1,8 +1,10 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import "./styles/mainLayout.scss";
 
 const App = () => {
   const [hoveredBox, setHoveredBox] = useState(null as string | null);
+  const navigate = useNavigate();
 
   return (
     <div className="container" data-hovered={hoveredBox}>
@@ -15,6 +17,7 @@ const App = () => {
           }`}
           onMouseEnter={() => setHoveredBox("contact")}
           onMouseLeave={() => setHoveredBox(null)}
+          onClick={() => navigate("/Contact")}
         >
           Contact
         </div>
@@ -24,6 +27,7 @@ const App = () => {
           }`}
           onMouseEnter={() => setHoveredBox("history")}
           onMouseLeave={() => setHoveredBox(null)}
+          onClick={() => navigate("/History")}
         >
           History
         </div>
@@ -33,6 +37,7 @@ const App = () => {
           }`}
           onMouseEnter={() => setHoveredBox("project")}
           onMouseLeave={() => setHoveredBox(null)}
+          onClick={() => navigate("/Project")}
         >
           Project
         </div>
@@ -42,6 +47,7 @@ const App = () => {
           }`}
           onMouseEnter={() => setHoveredBox("strength")}
           onMouseLeave={() => setHoveredBox(null)}
+          onClick={() => navigate("/Strength")}
         >
           Strength
         </div>
@@ -51,6 +57,7 @@ const App = () => {
           }`}
           onMouseEnter={() => setHoveredBox("user-info")}
           onMouseLeave={() => setHoveredBox(null)}
+          onClick={() => navigate("/UserInfo")}
         >
           UserInfo
         </div>
