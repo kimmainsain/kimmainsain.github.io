@@ -12,8 +12,8 @@ const BottomNavbar = () => {
 
   return (
     <nav role="navigation" className="nav-menu">
-      <div onClick={() => handleNavigation("/contact")} className="nav-link">
-        CONTACT
+      <div onClick={() => handleNavigation("/about")} className="nav-link">
+        ABOUT
       </div>
       <div onClick={() => handleNavigation("/project")} className="nav-link">
         PROJECT
