@@ -18,9 +18,9 @@ const App = () => {
           }`}
           onMouseEnter={() => setHoveredBox("contact")}
           onMouseLeave={() => setHoveredBox(null)}
-          onClick={() => navigate("/contact")}
+          onClick={() => navigate("/about")}
         >
-          CONTACT
+          ABOUT
         </div>
         <div
           className={`history inner-box ${

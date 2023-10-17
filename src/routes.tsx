@@ -15,7 +15,7 @@ const routes = [
     element: <UserInfo />,
   },
   {
-    path: "/contact",
+    path: "/about",
     element: <Contact />,
   },
   {
