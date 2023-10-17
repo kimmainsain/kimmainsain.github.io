@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  background-color: #000000;
 }
 
 .container {
@@ -104,6 +105,7 @@
     width 0.8s,
     height 0.8s,
     transform 0.8s;
+  z-index: 2;
 }
 
 .logo {
@@ -125,6 +127,7 @@
     color: #fff;
   }
   transform: translate(-50%, -50%);
+  z-index: 1;
 }
 
 /* contact가 확장될 때의 효과 */
