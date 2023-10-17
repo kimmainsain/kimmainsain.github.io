@@ -44,7 +44,7 @@
 .inner-box {
   position: absolute;
   background-color: white;
-  border: 2px solid black;
+  border: 3px solid black;
   display: flex;
   justify-content: center;
   font-size: 50px;
@@ -57,9 +57,9 @@
   }
 
   transition:
-    width 0.5s,
-    height 0.5s,
-    transform 0.5s;
+    width 1s,
+    height 1s,
+    transform 1s;
 }
 
 .contact {
@@ -67,6 +67,8 @@
   height: 40%;
   top: 0;
   left: 0;
+  border-right-width: 0;
+  border-top-width: 0;
 }
 
 .history {
@@ -74,6 +76,8 @@
   height: 60%;
   top: 0;
   right: 0;
+  border-bottom-width: 0;
+  border-top-width: 0;
 }
 
 .project {
@@ -81,6 +85,8 @@
   height: 60%;
   bottom: 0;
   left: 0;
+  border-top-width: 0;
+  border-bottom-width: 0;
 }
 
 .strength {
@@ -88,14 +94,16 @@
   height: 40%;
   bottom: 0;
   right: 0;
+  border-left-width: 0;
+  border-bottom-width: 0;
 }
 .inner-box {
   transition:
-    background-color 0.3s ease,
-    color 0.3s ease,
-    width 0.5s,
-    height 0.5s,
-    transform 0.5s;
+    background-color 0.5s ease,
+    color 0.5s ease,
+    width 0.8s,
+    height 0.8s,
+    transform 0.8s;
 }
 
 .logo {
