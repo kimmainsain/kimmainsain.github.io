@@ -13,10 +13,10 @@ const App = () => {
       <div className="footer marquee bottom">아래</div>
       <div className="main-wrapper">
         <div
-          className={`contact inner-box ${
-            hoveredBox === "contact" ? "expanded" : ""
+          className={`about inner-box ${
+            hoveredBox === "about" ? "expanded" : ""
           }`}
-          onMouseEnter={() => setHoveredBox("contact")}
+          onMouseEnter={() => setHoveredBox("about")}
           onMouseLeave={() => setHoveredBox(null)}
           onClick={() => navigate("/about")}
         >
@@ -43,14 +43,14 @@ const App = () => {
           PROJECT
         </div>
         <div
-          className={`strength inner-box ${
-            hoveredBox === "strength" ? "expanded" : ""
+          className={`stack inner-box ${
+            hoveredBox === "stack" ? "expanded" : ""
           }`}
-          onMouseEnter={() => setHoveredBox("strength")}
+          onMouseEnter={() => setHoveredBox("stack")}
           onMouseLeave={() => setHoveredBox(null)}
-          onClick={() => navigate("/strength")}
+          onClick={() => navigate("/stack")}
         >
-          STRENGTH
+          TECT STACK
         </div>
         <div
           className={`user-info inner-box ${

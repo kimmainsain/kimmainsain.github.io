@@ -1,8 +1,8 @@
 import React from "react";
-import Contact from "./pages/Contact";
+import About from "./pages/About";
 import History from "./pages/History";
 import Project from "./pages/Project";
-import Strength from "./pages/Strength";
+import Stack from "./pages/Stack";
 import UserInfo from "./pages/UserInfo";
 import App from "./App";
 const routes = [
@@ -16,7 +16,7 @@ const routes = [
   },
   {
     path: "/about",
-    element: <Contact />,
+    element: <About />,
   },
   {
     path: "/history",
@@ -27,8 +27,8 @@ const routes = [
     element: <Project />,
   },
   {
-    path: "/strength",
-    element: <Strength />,
+    path: "/stack",
+    element: <Stack />,
   },
 ];
 

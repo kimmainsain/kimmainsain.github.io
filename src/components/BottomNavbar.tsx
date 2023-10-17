@@ -25,8 +25,8 @@ const BottomNavbar = () => {
       >
         <img src={logo} alt="logo" className="logo" />
       </div>
-      <div onClick={() => handleNavigation("/strength")} className="nav-link">
-        STRENGTH
+      <div onClick={() => handleNavigation("/stack")} className="nav-link">
+        TECT STACK
       </div>
       <div onClick={() => handleNavigation("/history")} className="nav-link">
         HISTORY

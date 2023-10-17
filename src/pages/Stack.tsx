@@ -1,12 +1,12 @@
 import React from "react";
 import BottomNavbar from "../components/BottomNavbar";
-const Strength = () => {
+const Stack = () => {
   return (
     <div>
-      Strength
+      Stack
       <BottomNavbar />
     </div>
   );
 };
 
-export default Strength;
+export default Stack;

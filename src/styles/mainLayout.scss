@@ -64,7 +64,7 @@
     transform 1s;
 }
 
-.contact {
+.about {
   width: 60%;
   height: 40%;
   top: 0;
@@ -91,7 +91,7 @@
   border-bottom-width: 0;
 }
 
-.strength {
+.stack {
   width: 60%;
   height: 40%;
   bottom: 0;
@@ -130,28 +130,28 @@
 }
 
 /* contact가 확장될 때의 효과 */
-.container[data-hovered="contact"] .contact {
+.container[data-hovered="about"] .about {
   width: 65%;
   height: 50%;
 }
 
 /* contact가 확장될 때 다른 박스들의 크기 */
-.container[data-hovered="contact"] .history {
+.container[data-hovered="about"] .history {
   width: 35%;
   height: 70%;
 }
 
-.container[data-hovered="contact"] .project {
+.container[data-hovered="about"] .project {
   width: 45%;
   height: 50%;
 }
 
-.container[data-hovered="contact"] .strength {
+.container[data-hovered="about"] .stack {
   width: 55%;
   height: 30%;
 }
 
-.container[data-hovered="contact"] .user-info {
+.container[data-hovered="about"] .user-info {
   transform: translate(-25%, 0%);
 }
 
@@ -162,7 +162,7 @@
 }
 
 /* history가 확장될 때 다른 박스들의 크기 */
-.container[data-hovered="history"] .contact {
+.container[data-hovered="history"] .about {
   width: 50%;
   height: 45%;
 }
@@ -172,7 +172,7 @@
   height: 55%;
 }
 
-.container[data-hovered="history"] .strength {
+.container[data-hovered="history"] .stack {
   width: 70%;
   height: 35%;
 }
@@ -188,7 +188,7 @@
 }
 
 /* project가 확장될 때 다른 박스들의 크기 */
-.container[data-hovered="project"] .contact {
+.container[data-hovered="project"] .about {
   width: 80%;
   height: 25%;
 }
@@ -198,7 +198,7 @@
   height: 45%;
 }
 
-.container[data-hovered="project"] .strength {
+.container[data-hovered="project"] .stack {
   width: 40%;
   height: 55%;
 }
@@ -208,28 +208,28 @@
 }
 
 /* strength가 확장될 때의 효과 */
-.container[data-hovered="strength"] .strength {
+.container[data-hovered="stack"] .stack {
   width: 70%;
   height: 50%;
 }
 
 /* strength가 확장될 때 다른 박스들의 크기 */
-.container[data-hovered="strength"] .contact {
+.container[data-hovered="stack"] .about {
   width: 50%;
   height: 30%;
 }
 
-.container[data-hovered="strength"] .history {
+.container[data-hovered="stack"] .history {
   width: 50%;
   height: 50%;
 }
 
-.container[data-hovered="strength"] .project {
+.container[data-hovered="stack"] .project {
   width: 30%;
   height: 70%;
 }
 
-.container[data-hovered="strength"] .user-info {
+.container[data-hovered="stack"] .user-info {
   transform: translate(-100%, -100%);
 }
 
@@ -240,7 +240,7 @@
 }
 
 /* userInfo가 확장될 때 다른 박스들의 크기 */
-.container[data-hovered="user-info"] .contact {
+.container[data-hovered="user-info"] .about {
   width: 30%;
   height: 70%;
 }
@@ -255,7 +255,7 @@
   height: 30%;
 }
 
-.container[data-hovered="user-info"] .strength {
+.container[data-hovered="user-info"] .stack {
   width: 30%;
   height: 70%;
 }
