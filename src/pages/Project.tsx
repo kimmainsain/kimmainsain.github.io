@@ -1,11 +1,11 @@
 import React from "react";
 import BottomNavbar from "../components/BottomNavbar";
-import projectTemp from "../assets/images/project-temp.png";
+import Header from "../components/Header";
+
 const Project = () => {
   return (
     <div>
-      Project
-      <img src={projectTemp} alt="project-temp" />
+      <Header mainheader="Project ." subheader="FE / AOS" />
       <BottomNavbar />
     </div>
   );

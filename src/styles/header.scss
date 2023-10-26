@@ -1,0 +1,52 @@
+.component-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 1.375rem;
+  width: 80%;
+  max-width: 75.625rem;
+  margin: 0px auto;
+  padding: 8rem 0px 0px;
+}
+
+.component-main-header {
+  font-family: "SOYOMapleBoldTTF";
+  color: rgb(18, 18, 18);
+  font-size: 4.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 4.375rem;
+  letter-spacing: -0.5rem;
+}
+
+.component-sub-header {
+  font-family: "HakgyoansimWoojuR";
+  color: rgb(80, 74, 87);
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.25rem;
+  letter-spacing: -0.05rem;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "SOYOMapleBoldTTF";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2310@1.0/SOYOMapleBoldTTF.woff2")
+    format("woff2");
+}
+
+@font-face {
+  font-family: "HakgyoansimWoojuR";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-2@1.0/HakgyoansimWoojuR.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "GmarketSansMedium";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff")
+    format("woff");
+}
