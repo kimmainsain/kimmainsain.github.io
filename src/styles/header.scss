@@ -17,7 +17,12 @@
   font-style: normal;
   font-weight: 700;
   line-height: 4.375rem;
-  letter-spacing: -0.5rem;
+  letter-spacing: -0.5rem; // letter-spacing을 조절했습니다.
+
+  &::after {
+    content: "     .";
+    color: #6d10e5;
+  }
 }
 
 .component-sub-header {

@@ -5,7 +5,7 @@ import Header from "../components/Header";
 const UserInfo = () => {
   return (
     <div>
-      <Header mainheader="About ." subheader="개발자 김민섭입니다." />
+      <Header mainheader="About" subheader="개발자 김민섭입니다." />
       <BottomNavbar />
     </div>
   );

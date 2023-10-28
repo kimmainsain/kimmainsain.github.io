@@ -9,7 +9,7 @@ import CardBox from "../components/CardBox";
 const About = () => {
   return (
     <div className="about-page">
-      <Header mainheader="About ." subheader="개발자 김민섭입니다." />
+      <Header mainheader="About" subheader="개발자 김민섭입니다." />
       <CardBox
         img={profilePhoto}
         head="나를 표현하는 한줄"

@@ -15,6 +15,12 @@
     background-color: #fff;
     display: flex;
     justify-content: center;
+
+    font-size: 3rem;
+    line-height: 3.75rem;
+    letter-spacing: -0.1125rem;
+    font-family: "SOYOMapleBoldTTF";
+
     align-items: center;
     font-size: 18px;
     color: #222;
@@ -26,7 +32,7 @@
 
     &:hover,
     &.active {
-      background-color: #333;
+      background-color: #7b26e7;
       color: #fff;
     }
   }
@@ -45,7 +51,7 @@
         max-width: 100%;
         height: auto;
         max-height: 100%;
-        color: #222;
+        color: #7b26e7;
       }
     }
   }

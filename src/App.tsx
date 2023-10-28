@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./styles/mainLayout.scss";
-import homelogo from "./assets/images/homelogo.png";
+// import homelogo from "./assets/images/homelogo.png";
+import "./assets/fonts/fonts.scss";
 
 const App = () => {
   const [hoveredBox, setHoveredBox] = useState(null as string | null);
@@ -9,8 +10,8 @@ const App = () => {
 
   return (
     <div className="container" data-hovered={hoveredBox}>
-      <div className="header marquee">위</div>
-      <div className="footer marquee bottom">아래</div>
+      <div className="header marquee"></div>
+      <div className="footer marquee bottom"></div>
       <div className="main-wrapper">
         <div
           className={`about inner-box ${
@@ -60,7 +61,7 @@ const App = () => {
           onMouseLeave={() => setHoveredBox(null)}
           onClick={() => navigate("/userInfo")}
         >
-          <img src={homelogo} alt="logo" className="logo" />
+          All
         </div>
       </div>
     </div>

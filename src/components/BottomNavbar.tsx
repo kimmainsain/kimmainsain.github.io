@@ -1,7 +1,6 @@
 import React from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 import "../styles/bottomNav.scss";
-import logo from "../assets/images/mainlogo.png";
 
 const BottomNavbar = () => {
   const navigate = useNavigate();
@@ -32,9 +31,8 @@ const BottomNavbar = () => {
         className={`nav-home is--brand ${
           location.pathname === "/" ? "active" : ""
         }`}
-        aria-label="home"
       >
-        <img src={logo} alt="logo" className="logo" />
+        HOME
       </div>
       <div
         onClick={() => handleNavigation("/stack")}

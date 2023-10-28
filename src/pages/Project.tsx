@@ -29,7 +29,7 @@ const slideData = [
 const Project = () => {
   return (
     <div className="project-page">
-      <Header mainheader="Project ." subheader="FE / AOS" />
+      <Header mainheader="Project" subheader="FE / AOS" />
       <div className="project-container">
         <Slider {...sliderSettings}>
           {slideData.map((slide, index) => (
