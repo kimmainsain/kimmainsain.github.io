@@ -50,7 +50,7 @@ const App = () => {
           onMouseLeave={() => setHoveredBox(null)}
           onClick={() => navigate("/stack")}
         >
-          TECT STACK
+          TECH STACK
         </div>
         <div
           className={`user-info inner-box ${

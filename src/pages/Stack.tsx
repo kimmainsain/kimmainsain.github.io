@@ -5,7 +5,7 @@ import Header from "../components/Header";
 const Stack = () => {
   return (
     <div>
-      <Header mainheader="Tect Stack ." subheader="개발자 김민섭입니다." />
+      <Header mainheader="Tech Stack ." subheader="개발자 김민섭입니다." />
       <BottomNavbar />
     </div>
   );
