@@ -20,7 +20,11 @@ const sliderSettings = {
   arrows: true,
 };
 
-const slideData = ["Slide 1 Content", "Slide 2 Content", "Slide 3 Content"];
+const slideData = [
+  { text: "Slide 1 Content", img: profilePhoto },
+  { text: "Slide 2 Content", img: profilePhoto },
+  { text: "Slide 3 Content", img: profilePhoto },
+];
 
 const Project = () => {
   return (
@@ -30,12 +34,24 @@ const Project = () => {
         <Slider {...sliderSettings}>
           {slideData.map((slide, index) => (
             <div key={index} className="slide-item">
-              {slide}
+              <img src={slide.img} alt={`Slide ${index + 1}`} />
+              {slide.text}
             </div>
           ))}
         </Slider>
       </div>
-      <CardBox img={profilePhoto} head="프로젝트 이름" body="프로젝트 설명" />
+      <CardBox
+        img={profilePhoto}
+        head="프로젝트 이름"
+        body="프로젝트 설명"
+        view={true}
+      />
+      <CardBox
+        img={profilePhoto}
+        head="프로젝트 이름"
+        body="프로젝트 설명"
+        view={false}
+      />
 
       <BottomNavbar />
     </div>

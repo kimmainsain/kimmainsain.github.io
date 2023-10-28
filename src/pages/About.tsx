@@ -14,6 +14,7 @@ const About = () => {
         img={profilePhoto}
         head="나를 표현하는 한줄"
         body="두세줄정도 적을 공간 깃허브 주소 + 블로그 링크"
+        view={true}
       />
       <div className="about-keywords">
         <div className="keyword-item">
