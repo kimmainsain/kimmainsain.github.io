@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.4f553a20.css",
-    "main.js": "/static/js/main.d710f0ad.js",
+    "main.css": "/static/css/main.fe34ce9e.css",
+    "main.js": "/static/js/main.04456241.js",
     "static/media/ssunguri.png": "/static/media/ssunguri.e5de72309ff295294239.png",
     "static/media/homelogo.png": "/static/media/homelogo.d9b24b23bac305211753.png",
     "static/media/mainlogo.png": "/static/media/mainlogo.363da3dd8128ea59aaae.png",
     "index.html": "/index.html",
-    "main.4f553a20.css.map": "/static/css/main.4f553a20.css.map",
-    "main.d710f0ad.js.map": "/static/js/main.d710f0ad.js.map"
+    "main.fe34ce9e.css.map": "/static/css/main.fe34ce9e.css.map",
+    "main.04456241.js.map": "/static/js/main.04456241.js.map"
   },
   "entrypoints": [
-    "static/css/main.4f553a20.css",
-    "static/js/main.d710f0ad.js"
+    "static/css/main.fe34ce9e.css",
+    "static/js/main.04456241.js"
   ]
 }
