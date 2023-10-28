@@ -5,6 +5,8 @@ import "slick-carousel/slick/slick-theme.css";
 import "../styles/projectLayout.scss";
 import BottomNavbar from "../components/BottomNavbar";
 import Header from "../components/Header";
+import CardBox from "../components/CardBox";
+import profilePhoto from "../assets/images/ssunguri.png";
 
 const sliderSettings = {
   dots: true,
@@ -33,6 +35,7 @@ const Project = () => {
           ))}
         </Slider>
       </div>
+      <CardBox img={profilePhoto} head="프로젝트 이름" body="프로젝트 설명" />
 
       <BottomNavbar />
     </div>
